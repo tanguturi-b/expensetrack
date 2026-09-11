@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ExpenseTrack</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div id="app">
+    <section id="auth-section">
+      <h1>ExpenseTrack</h1>
+      <input id="username" type="text" placeholder="Username">
+      <input id="password" type="password" placeholder="Password">
+      <button id="register-btn">Register</button>
+      <button id="login-btn">Login</button>
+      <p id="auth-message"></p>
+    </section>
+
+    <section id="dashboard-section" style="display:none;">
+      <h2>Add Transaction</h2>
+      <input id="amount" type="number" placeholder="Amount" step="0.01">
+      <input id="description" type="text" placeholder="Description">
+      <input id="category" type="text" placeholder="Category name">
+      <input id="date" type="date">
+      <button id="add-transaction-btn">Add</button>
+
+      <h2>Transactions</h2>
+      <ul id="transaction-list"></ul>
+
+      <h2>Summary</h2>
+      <div id="summary"></div>
+
+      <button id="logout-btn">Logout</button>
+    </section>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
